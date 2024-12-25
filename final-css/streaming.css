@@ -28,7 +28,9 @@ section{
     animation-range: entry 0% cover 30%;
 }
 
-
+a{
+    text-decoration: none;
+}
 /* Header styles */
 header {
     display: flex;
@@ -1256,7 +1258,7 @@ video {
     z-index: 30;
     top: 25%;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-
+    text-decoration: none;
     
 }
 

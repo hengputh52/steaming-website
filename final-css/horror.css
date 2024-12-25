@@ -293,7 +293,7 @@ header input{
     border-radius: 5px;
     box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-    
+    text-decoration: none;
     
 }
 .watch-button a:hover{
@@ -420,11 +420,15 @@ header input{
     z-index: 30;
     top: 25%;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-
+    text-decoration: none;
     
 }
 
-
+.top-pick-movie a{
+    width: 250px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0);
+}
 
 
 

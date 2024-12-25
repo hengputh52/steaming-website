@@ -4,41 +4,174 @@ html, body{
     height: 100%;
 }
 body{
-    background: url(final-image/gotbackground.jpg) no-repeat center center fixed;
+    background-image: url("../final-image/gotbackground.jpg");
     background-size: cover;
 }
+section{
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+
+
+/* Header styles */
 header {
     display: flex;
     align-items: center;
     position: fixed;
-    z-index: 200;
-    background-color: rgba(0, 0, 0, 0);
-    transition: background 0.3s, color 0.3s;
-    width: 100%;
-    max-width: 1200px;
-    justify-content: space-around;
+    z-index: 800;
+   background-color: rgba(0, 0, 0, 0);
+   transition: background 0.3s color 0.3s;
+   width: 100%;
+   justify-content: space-around;
+   
 }
 
 header a {
     text-decoration: none;
     color: white;
     font-size: 1.2em;
-    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 600;
+    text-shadow:2px 2px 2px rgba(0, 0, 0, 0.3);
     font-weight: 600;
-    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+    
+
+    
 }
 
-header a:hover {
+
+
+
+
+
+
+
+
+
+
+/* Genres button */
+.genres {
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+}
+
+/* Full-screen menu overlay */
+.fullscreen-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%); /* Start hidden above the viewport */
+    transition: transform 0.5s ease-in-out; /* Smooth slide-in animation */
+    z-index: 1000;
+}
+
+/* When menu is active */
+.fullscreen-menu.active {
+    transform: translateY(0); /* Slide into view */
+}
+
+/* Close button */
+.close-menu {
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    font-size: 2rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Menu content */
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.menu-content a {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    transition: color 0.3s;
+}
+
+.menu-content a:hover {
+    color: yellow;
+
+}
+
+#t{
+    color: yellow;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 1.2em;
+    font-weight: 600;
+}
+#h{
+    color: yellow;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+section{
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.genres{
+    font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    position: relative;
+}
+
+.genres .menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0);
+    
+}
+header a:hover{
     color: rgba(0, 0, 0, 1);
-    text-shadow: none;
+   
 }
-
-header input {
+header input{
     flex-grow: 0.5;
     border: solid rgba(255, 255, 255, 0.5);
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     padding: 5px;
+}
+
+#profile{
+    width: 40px;
+    border-radius: 50%;
+    background-color:white;
 }
 
 .logo {
@@ -162,6 +295,10 @@ header input {
     font-weight: 700;
     line-height: normal;
 }
+.ratetext1 a{
+    color: black;
+    text-decoration: none;
+}
 .rateboxpic1{
     margin: 7%;
     width: 70px;
@@ -208,17 +345,49 @@ header input {
     cursor: pointer;
     background-color: rgb(13, 114, 202);
 }
+#item1, #item2, #item3, #item4, #item5 {
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    min-width: 500px;
+    height: 270px;
+}
 
 #item1 {
-    background: url() lightgray 0px / 102%   no-repeat;
-}#item2 {
-    background: url(final-image/403a711032b22fe9771b57e5eb23a955ffc3d39aa5adde7b9a297fd6b2677a54.jpg) lightgray 0px 10% / 100%  no-repeat;
-}#item3 {
-    background: url(final-image/boyst.webp) lightgray 0px / 100%   no-repeat;
-}#item4 {
-    background: url(final-image/MV5BZDFkM2M4MTItNDA1NS00YTE5LTgwNmQtOTkwM2ZlOGIxODZjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg) lightgray 0px / 100%   no-repeat;
-}#item5 {
-    background: url(final-image/KonBrosarSrey24HDF.jpg) lightgray 0px / 102%   no-repeat;
+    background-image: url("../final-image/arcaneserie.png");
+}
+#item2 {
+    background-image: url("../final-image/breakingbadserir.jpg");
+}
+#item3 {
+    background-image: url("../final-image/boyst.webp");
+}
+#item4 {
+    background-image: url("../final-image/MV5BZDFkM2M4MTItNDA1NS00YTE5LTgwNmQtOTkwM2ZlOGIxODZjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg");
+}
+#item5 {
+    background-image: url("../final-image/KonBrosarSrey24HDF.jpg");
+}
+#item6 {
+    background-color: rgba(255, 255, 255, 0.637);
+    min-width: 500px; /* Match the size of other items */
+    height: 270px; /* Match the height of other items */
+    border-radius: 15px; /* Adjusted for a smooth curve */
+    display: flex; /* Center the text */
+    align-items: center; /* Vertically center the text */
+    justify-content: center; 
+    text-decoration: none;
+}
+
+#vm {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4em;
+    text-decoration: none;
+    color: black;
+}
+
+a {
+    text-decoration: none;
 }
 
 .wrapper .item:hover {

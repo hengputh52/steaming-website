@@ -7,11 +7,25 @@
     <title>TVSeries</title>
 </head>
 <header>
-    <a href="#"><span id="t">T</span><span id="h">H</span>MOVIE</a>
-    <a href="#">TV Show</a>
-    <a href="#">Streaming Now</a>
-    <a href="#">Genre</a>
-    <input type="search" id="search" placeholder="Search title movie"> 
+    <a href="testone.html"><span id="t">T</span><span id="h">H</span>MOVIE</a>
+    <a href="TvSeries.html">TV Show</a>
+    <a href="New-Movie.html">Streaming Now</a>
+    <div class="genres" id="genres">
+        Genre
+    </div>
+    <div class="fullscreen-menu" id="fullscreenMenu">
+        <button class="close-menu" id="closeMenu">✖</button>
+        <div class="menu-content">
+            <a href="action.html">Action</a>
+            <a href="fantasy.html">Fantasy</a>
+            <a href="romance.html">Romance</a>
+            <a href="horror.html">Horror</a>
+            <a href="sci-fi.html">Sci-Fi</a>
+        </div>
+    </div>
+    
+    <input type="search" id="search" placeholder="Search title movie">
+    <img src="final-image/500-days-summer-1200-1200-675-675-crop-000000-removebg-preview.png" id="profile">
 </header>
 <body>
     <div class="box1">
@@ -26,19 +40,22 @@
             </div>
             <div class="ratebox1">
                 <img class="rateboxpic1" src="final-image/Button2.png" alt="Button">
-                <p class="ratetext1">Watch Now</p>
+                <p class="ratetext1">
+                    <a href="Play.html">Watch Now</a></p>
             </div>
         </div>
         <div class="text1">Popular on T<span id="h">H</span>MOVIE</div>
     </div>
     <div class="box2">
         <div class="wrapper">
-            <div class="item" id="item1"></div>
-            <div class="item" id="item2"></div>
-            <div class="item" id="item3"></div>
-            <div class="item" id="item4"></div>
-            <div class="item" id="item5"></div>
+            <a href="Play.html"><div class="item" id="item1"></div></a>
+            <a href="Play.html"><div class="item" id="item2"></div></a>
+            <a href="Play.html"><div class="item" id="item3"></div></a>
+            <a href="Play.html"><div class="item" id="item4"></div></a>
+            <a href="Play.html"><div class="item" id="item5"></div></a>
+            <a href="MoreMovie.html"><div class="item" id="item6"><p id="vm">View More</p></div></a>
         </div>
     </div>
+    <script src="final-javascript/action.js"></script>
 </body>
 </html>
