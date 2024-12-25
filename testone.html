@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TH Streaming Website</title>
+    <link rel="stylesheet" href="final-css/streaming.css">
+    <script src="https://kit.fontawesome.com/76d1d2904c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="testone.html"><span id="t">T</span><span id="h">H</span>MOVIE</a>
+        <a href="#">TV Show</a>
+        <a href="#">Streaming Now</a>
+        <div class="genres" id="genres">
+            Genre
+        </div>
+        
+        <div class="fullscreen-menu" id="fullscreenMenu">
+            <button class="close-menu" id="closeMenu">✖</button>
+            <div class="menu-content">
+                <a href="action.html" target="_self">Action</a>
+                <a href="fantasy.html">Fantasy</a>
+                <a href="romance.html">Romance</a>
+                <a href="horror.html">Horror</a>
+                <a href="#">Sci-Fi</a>
+            </div>
+        </div>
+        
+        <input type="search" id="search" placeholder="Search title movie">
+        <a href="login.html" id="profile-info"><img src="final-image/500-days-summer-1200-1200-675-675-crop-000000-removebg-preview.png" id="profile"></a>
+    </header>
+
+    <main>
+        <div class="slider">
+            <div class="slider-container">
+                <!-- First Trailer -->
+                <div id="trailer1" class="trailer-container">
+                    <video src="final-video/Untitled video - Made with Clipchamp (16).mp4" autoplay loop muted></video>
+                    <img src="final-image/Dune_2021_transparent_logo.png" id="dune-title">
+                    <div class="trailer-content">
+                        <div class="director">
+                            <img src="final-image/gettyimages-1345418794.jpg" id="denis">
+                            <h1>Denis Villeneuve</h1>
+                        </div>
+                        
+                        <h1>Dune (2021)</h1>
+                        <p>Paul Atreides arrives on Arrakis after his father accepts the stewardship of the dangerous planet.</p>
+                        <div class="rating">
+                            <img src="final-image/IMDB_Logo_2016.svg.png">
+                            <img src="final-image/star.png" id="star">
+                            <img src="final-image/star.png" id="star">
+                            <img src="final-image/star.png" id="star">
+                            <img src="final-image/star.png" id="star">
+                            <img src="final-image/star.png" id="star">
+                            <img src="final-image/star.png" id="star">
+                            <img src="final-image/star.png" id="star">
+                            <img src="final-image/star.png" id="star">
+                            <img src="final-image/star.png" id="star">
+                            <h2>9/10</h2>
+                        </div>
+                        <div class="rating">
+                            <img src="final-image/letterboxd-logo-v-neg-rgb-1000px.png">
+                            <img src="final-image/star (1).png" id="star">
+                            <img src="final-image/star (1).png" id="star">
+                            <img src="final-image/star (1).png" id="star">
+                            <img src="final-image/star (1).png" id="star">
+                            <h2>4/5</h2>
+                        </div>
+                        <div class="service">
+                            <a href="https://1flix.to/watch-movie/watch-dune-part-two-106510.10331785" target="_blank">Watch Now</a>
+                            <a href="#">Add to List</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Trailer -->
+                <div class="trailer-container">
+                    <video src="final-video/Untitled video - Made with Clipchamp (19).mp4" autoplay loop muted></video>
+                    <img src="final-image/zlaeDP3km5PVT648gPTk3RgHwdz (1).png" id="heron-title">
+                    <div class="trailer-content">
+                        <div class="director">
+                            <img src="final-image/156932_v9_ba.jpg" id="denis">
+                            <h1>Hayao Miyazaki</h1>
+                        </div>
+                        <h1>The Boy and the Heron</h1>
+                        <p>Mahito, a young boy, struggles to settle in a new town after his mother's death.</p>
+                        <div class="rating">
+                            <img src="final-image/IMDB_Logo_2016.svg.png">
+                            <img src="final-image/star.png" id="star">
+                            <img src="final-image/star.png" id="star">
+                            <img src="final-image/star.png" id="star">
+                            <img src="final-image/star.png" id="star">
+                            <img src="final-image/star.png" id="star">
+                            <img src="final-image/star.png" id="star">
+                            <img src="final-image/star.png" id="star">
+                            <img src="final-image/star.png" id="star">
+                            <img src="final-image/star.png" id="star">
+                            <h2>9/10</h2>
+                        </div>
+                        <div class="rating">
+                            <img src="final-image/letterboxd-logo-v-neg-rgb-1000px.png">
+                            <img src="final-image/star (1).png" id="star">
+                            <img src="final-image/star (1).png" id="star">
+                            <img src="final-image/star (1).png" id="star">
+                            <img src="final-image/star (1).png" id="star">
+                            <h2>4/5</h2>
+                        </div>
+                        <div class="service">
+                            <a href="https://1flix.to/movie/watch-the-boy-and-the-heron-107086" target="_blank">Watch Now</a>
+                            <a href="#">Add to List</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Third Trailer -->
+                <div class="trailer-container">
+                    <video src="final-video/Untitled video - Made with Clipchamp (17).mp4" autoplay muted loop></video>
+                    <img src="final-image/800px-Blade-runner-2049-logo.png" id="blade-runner-title">
+                    <div class="trailer-content">
+                        <div class="director">
+                            <img src="final-image/gettyimages-1345418794.jpg" id="denis">
+                            <h1>Denis Villeneuve</h1>
+                        </div>
+                        <h1>Blade Runner 2049</h1>
+                        <p>An officer unearths a secret that could create chaos, searching for a former blade runner missing for decades.</p>
+                        <div class="rating">
+                            <img src="final-image/IMDB_Logo_2016.svg.png">
+                            <img src="final-image/star.png" id="star">
+                            <img src="final-image/star.png" id="star">
+                            <img src="final-image/star.png" id="star">
+                            <img src="final-image/star.png" id="star">
+                            <img src="final-image/star.png" id="star">
+                            <img src="final-image/star.png" id="star">
+                            <img src="final-image/star.png" id="star">
+                            <img src="final-image/star.png" id="star">
+                            <img src="final-image/star.png" id="star">
+                            <h2>9/10</h2>
+                        </div>
+                        <div class="rating">
+                            <img src="final-image/letterboxd-logo-v-neg-rgb-1000px.png">
+                            <img src="final-image/star (1).png" id="star">
+                            <img src="final-image/star (1).png" id="star">
+                            <img src="final-image/star (1).png" id="star">
+                            <img src="final-image/star (1).png" id="star">
+                            <h2>4/5</h2>
+                        </div>
+                        <div class="service">
+                            <a href="https://1flix.to/movie/watch-blade-runner-2049-19739" target="_blank">Watch Now</a>
+                            <a href="#">Add to List</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fourth Trailer -->
+                <div class="trailer-container">
+                    <video src="final-video/Untitled video - Made with Clipchamp (20).mp4" autoplay muted loop></video>
+                    <img src="final-image/nesan-removebg-preview.png" id="puss-title">
+                    <div class="trailer-content">
+                        <div class="director">
+                            <img src="final-image/mao-ayuth.jpg" id="denis">
+                            <h1>Mao Ayuth</h1>
+                        </div>
+                        <h1>The Crocodile (2005)</h1>
+                        <p>After a series of deadly crocodile attacks, a farmer decides to become a crocodile hunter.</p>
+                        <div class="rating">
+                            <img src="final-image/IMDB_Logo_2016.svg.png">
+                            <img src="final-image/star.png" id="star">
+                            <img src="final-image/star.png" id="star">
+                            <img src="final-image/star.png" id="star">
+                            <img src="final-image/star.png" id="star">
+                            <img src="final-image/star.png" id="star">
+                            <img src="final-image/star.png" id="star">
+                            <img src="final-image/star.png" id="star">
+                            <img src="final-image/star.png" id="star">
+                            <img src="final-image/star.png" id="star">
+                            <h2>9/10</h2>
+                        </div>
+                        <div class="rating">
+                            <img src="final-image/letterboxd-logo-v-neg-rgb-1000px.png">
+                            <img src="final-image/star (1).png" id="star">
+                            <img src="final-image/star (1).png" id="star">
+                            <img src="final-image/star (1).png" id="star">
+                            <img src="final-image/star (1).png" id="star">
+                            <h2>4/5</h2>
+                        </div>
+                        <div class="service">
+                            <a href="https://1flix.to/movie/watch-puss-in-boots-the-last-wish-91342" target="_blank">Watch Now</a>
+                            <a href="#">Add to List</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="prev">←</button>
+            <button class="next">→</button>
+        </div>
+    </main>
+
+    <section>
+        <div class="upcoming-container">
+            <div class="upcoming">
+                <h1>Upcoming Movie</h1>
+            </div>
+            <div class="upcoming-content">
+                <div class="first-upcoming-movie">
+                    <img src="final-image/lalaland.jpg" id="lalaland">
+                    <img src="final-image/La_La_Land_-_logo_29.webp" id="lalaland-title">
+                    <div class="video-container">
+                        <video id="lalaland-video" src="final-video/[4K]  La La Land   [EDIT] - (Let It Happen).mp4" autoplay muted loop></video>
+                        <h1>When Sebastian, a pianist, and Mia, an actress, follow their passion and achieve success in their respective fields, they find themselves torn between their love for each other and their careers.</h1>
+                        <p id="genre-1"> Musical/Romance</p>
+                        <p id="duration">2h 8m</p>
+                        <p id="on-theatre">On Theatre 30 Dec</p>
+                        <div class="service-1">
+                            <a>watch Trailer</a>
+                            <a>Add to List</a>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="second-upcoming-movie">
+                    <div class="it-movie">
+                        <img src="final-image/51NB383CKkL._AC_SL1200_.jpg" id="it">
+                        <div class="video-container-1">
+                            <video id="it-trailer" src="final-video/Untitled video - Made with Clipchamp (21).mp4" autoplay muted loop></video>
+                            <p id="description-it">Seven helpless and bullied children are forced to face their worst nightmares when Pennywise, a shape-shifting clown, reappears. The clown, an ancient evil torments children before feeding on them.</p>
+                            <p id="genre-2">Horror/Mystery</p>
+                            <p id="duration-2">2h 15m</p>
+                            <p id=on-theatre-2>On Theatre 01 Jan</p>
+                            <div class="service-2">
+                                <a>Watch Trailer</a>
+                                <a>Add to List</a>
+                        </div>
+                    </div>
+                    
+                    </div>
+                    <div class="third-upcoming-movie">
+                        <div class="kingdom-video">
+                            <img src="final-image/kingdom-of-the-planet-of-the-apes-banner-2.jpg" id="kingdom">
+                            <div class="video-container-2">
+                                <video id="kingdom-trailer" src="final-video/Untitled video - Made with Clipchamp (23).mp4" autoplay muted loop></video>
+                                <p id="genre-3">Horror/Mystery</p>
+                                <p id="duration-3">2h 15m</p>
+                                <p id=on-theatre-3>On Theatre 01 Jan</p>
+                                <div class="service-3">
+                                    <a>Watch Trailer</a>
+                                    <a>Add to List</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="rat-movie">
+                            <img src="final-image/film__4081-ratatouille--hi_res-9acbf32a.jpg" id="rat"> 
+                            <img src="final-image/10ec2671eb62abe8528dfdb0484f9e8c.png" id="rat-title">
+                            <div class="video-container-3">
+                                <video id="rat-trailer" src="final-video/Untitled video - Made with Clipchamp (24).mp4" autoplay loop muted></video>
+                                <p id="genre-4">Family/Comedy</p>
+                                <p id="duration-4">1h 51m</p>
+                                <p id="on-theatre-4">On Theare 02 Jan</p>
+                                <div class="service-4">
+                                    <a>Watch Trailer</a>
+                                    <a>Add to List</a>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        
+                    </div>
+                </div>
+                <div class="view-more">
+                    <a>View More</a>
+                </div>  
+
+        </div>
+    </section>
+
+    <section>
+        <div class="streaming-now">
+            <h1>Streaming Now</h1>
+        </div>
+
+        <div class="days-summer">
+            <img id="days-movie" src="final-image/title_new.jpg">
+            <div class="days-information">
+                <img id="days-actor" src="final-image/000012010-1-2000-f03c4d1c57994b6594b191fe7af44488-removebg-preview.png">
+                <img id="days-actress" src="final-image/ilovesmith-removebg-preview.png">
+                <div class="service-days">
+                    <a>Watch Now</a>
+                    <a>Add to List</a>
+                </div>
+            </div>
+            <div class="about-days">
+                <p id="genre-5-days">Comedy/Romance</p>
+                <p id="duration-days">1h 35m</p>
+                <p id="description-days">Tom revisits the approximate one year he shared with Summer, the girl he thought he could spend the rest of his life with. She, on the other hand, does not believe in relationships or boyfriends.</p>
+                <p id="days-line">"Someday someone will walk into your life and make you realise why it never worked out with anyone else"</p>
+            </div>
+            <div class="days-review">
+                <div class="days-rating-imdb">
+                    <img src="final-image/IMDB_Logo_2016.svg.png" id="imdb">
+                    <h2>9/10</h2>
+                </div>
+                <div class="days-rating-letterbox">
+                    <img src="final-image/letterboxd-logo-v-neg-rgb-1000px.png" id="letterbox">
+                    <h2>4/5</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </div>
+    <section>
+        
+        <div class="weathering">
+            <img id="weathering-movie" src="final-image/weatheringbackground-final.jpg">
+            <img id="weathering-title" src="final-image/Weathering_with_You.webp">
+            <div class="weathering-information">
+                <img id="weathering-actor" src="final-image/weathering-with-you-poster-removebg-preview.png">
+                <img id="weathering-actress" src="final-image/weathering-with-you-poster-1-removebg-preview.png">
+                <div class="service-weathering">
+                    <a>Watch Now</a>
+                    <a>Add to List</a>
+                </div>
+            </div>
+            <div class="about-weathering">
+                <p id="genre-5-weathering">Comedy/Romance</p>
+                <p id="duration-weathering">1h 35m</p>
+                <p id="description-weathering">In Tokyo, a runaway high school student facing financial struggles ends up with a job at a small-time publisher. One day, he meets a young girl who has the ability to control the weather.</p>
+                <p id="weathering-line">"Who cares if we can't see any sunshine? I want you more than any blue sky.".</p>
+            </div>
+            <div class="weathering-review">
+                <div class="weathering-rating-imdb">
+                    <img src="final-image/IMDB_Logo_2016.svg.png" id="weathering-imdb">
+                    <h2>9/10</h2>
+                </div>
+                <div class="weathering-rating-letterbox">
+                    <img src="final-image/letterboxd-logo-v-neg-rgb-1000px.png" id="weathering-letterbox">
+                    <h2>4/5</h2>
+                </div>
+        </div>
+    </section>
+    <section>
+        <div class="moving-castle">
+        <img id="moving-castle-movie" src="final-image/howl's.jpg">
+        <img id="moving-castle-title" src="final-image/howls-moving-castle-logo-c9o0yutv0a9tba58.png">
+        <div class="moving-castle-information">
+            <img id="moving-castle-actor" src="final-image/castle.png">
+            <div class="service-moving-castle">
+                <a>Watch Now</a>
+                <a>Add to List</a>
+            </div>
+        </div>
+        <div class="about-moving-castle">
+            <p id="genre-moving-castle">Comedy/Romance</p>
+            <p id="duration-moving-castle">1h 35m</p>
+            <p id="description-moving-castle">Jealous of Sophie's closeness to Howl, a wizard, the Witch of Waste transforms her into an old lady. Sophie must find a way to break the spell with the help of Howl's friends, Calcifer and Markl.</p>
+            <p id="moving-castle-line">"They say that the brightest spark burns best when circumstances are their worst".</p>
+        </div>
+        <div class="moving-castle-review">
+            <div class="moving-castle-rating-imdb">
+                <img src="final-image/IMDB_Logo_2016.svg.png" id="moving-castle-imdb">
+                <h2>9/10</h2>
+            </div>
+            <div class="moving-castle-rating-letterbox">
+                <img src="final-image/letterboxd-logo-v-neg-rgb-1000px.png" id="moving-castle-letterbox">
+                <h2>4/5</h2>
+            </div>
+    </div>
+    </section>
+    
+    <section>
+        <div class="more-movie">
+            <h1>More Movie</h1>
+        </div>
+        <div class="movie-container">
+            <div class="past-live">
+                <div class="card-front">
+                   <img id="past-live-movie" src="final-image/past live.jpg"> 
+                </div>
+                <div class="card-back">
+                    <a>▷</a>
+                    <p id="romance">Romance/Drama</p>
+                    <p id="time">1h 46m</p>
+                </div>
+            </div>
+            <div class="past-live">
+                <div class="card-front">
+                    <img id="past-live-movie" src="final-image/MV5BYzFkZDkzN2MtNDFkNi00NmQ3LWJlOGQtYTdiYmFjOWZiMjRjXkEyXkFqcGc@._V1_.jpg">
+                </div>
+                <div class="card-back">
+                    <a>▷</a>
+                    <p id="romance">Romance/Drama</p>
+                    <p id="time">1h 46m</p>
+                </div>
+                
+
+            </div>
+            <div class="past-live">
+                <div class="card-front">
+                    <img id="past-live-movie" src="final-image/a620e3ef58793b8a7c3a69b0e0d827181eefd509fa8a555be1c35049da066f4d.jpg">
+                </div>
+                <div>
+                    <div class="card-back">
+                        <a>▷</a>
+                        <p id="romance">Romance/Drama</p>
+                        <p id="time">1h 46m</p>
+                    </div>
+                </div>
+                
+
+            </div>
+            <div class="past-live">
+                <div class="card-front">
+                     <img id="past-live-movie" src="final-image/b93f2d151691411.63106be98234a.jpg">
+
+                </div>
+                <div>
+                    <div class="card-back">
+                        <a>▷</a>
+                        <p id="romance">Romance/Drama</p>
+                        <p id="time">1h 46m</p>
+                    </div>
+                </div>
+               
+                 
+            </div>
+            <div class="past-live">
+                <div class="card-front">
+                   <img id="past-live-movie" src="final-image/MV5BMTY4NzcwODg3Nl5BMl5BanBnXkFtZTcwNTEwOTMyMw@@._V1_FMjpg_UX1000_.jpg"> 
+                </div>
+                <div class="card-back">
+                    <a>▷</a>
+                    <p id="romance">Romance/Drama</p>
+                    <p id="time">1h 46m</p>
+                </div>
+                
+                
+
+            </div>
+            <div class="past-live">
+                <div class="card-front">
+                   <img id="past-live-movie" src="final-image/MV5BMTYxOTQ1MzI0Nl5BMl5BanBnXkFtZTgwMzgwMzIxNDM@._V1_FMjpg_UX1000_.jpg"> 
+
+                </div>
+                <div class="card-back">
+                    <a>▷</a>
+                    <p id="romance">Romance/Drama</p>
+                    <p id="time">1h 46m</p>
+                </div>
+                
+
+            </div>
+            <div class="past-live">
+                <div class="card-front">
+                    <img id="past-live-movie" src="final-image/MV5BOTQwYmRhNGQtODI2Mi00ZTRlLTk0Y2QtY2NkNjE1MGNhNTgwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">
+                </div>
+                <div class="card-back">
+                    <a>▷</a>
+                    <p id="romance">Romance/Drama</p>
+                    <p id="time">1h 46m</p>
+                </div>
+                
+
+            </div>
+            <div class="past-live">
+                <div class="card-front">
+                    <img id="past-live-movie" src="final-image/MV5BZjE0ZjgzMzYtMTAxYi00NGMzLThmZDktNzFlMzA2MWRmYWQ0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">        
+
+                </div>
+                <div class="card-back">
+                    <a>▷</a>
+                    <p id="romance">Romance/Drama</p>
+                    <p id="time">1h 46m</p>
+                </div>
+                
+
+            </div>
+            <div class="past-live">
+                <div class="card-front">
+                   <img id="past-live-movie" src="final-image/MV5BMTQ2MzQ0NTk4N15BMl5BanBnXkFtZTcwMDc2NDYzNQ@@._V1_FMjpg_UX1000_.jpg"> 
+
+                </div>
+                <div class="card-back">
+                    <a>▷</a>
+                    <p id="romance">Romance/Drama</p>
+                    <p id="time">1h 46m</p>
+                </div>
+                
+
+            </div>
+            <div class="past-live">
+                <div class="card-front">
+                  <img id="past-live-movie" src="final-image/MV5BNTA5ZWMwNmYtNWI1ZS00NDRlLTkxNzktMzdhZDU2ZDhjNDJmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">  
+
+                </div>
+                <div class="card-back">
+                    <a>▷</a>
+                    <p id="romance">Romance/Drama</p>
+                    <p id="time">1h 46m</p>
+                </div>
+                
+            </div>
+            <div class="past-live">
+                <div class="card-front">
+                  <img id="past-live-movie" src="final-image/p_bighero6_19753_20bd6206.jpeg">  
+
+                </div>
+                <div class="card-back">
+                    <a>▷</a>
+                    <p id="romance">Romance/Drama</p>
+                    <p id="time">1h 46m</p>
+                </div>
+                
+            </div>
+            <div class="past-live">
+                <div class="card-front">
+                  <img id="past-live-movie" src="final-image/MV5BMjIwMDIwNjAyOF5BMl5BanBnXkFtZTgwNDE1MDc2NTM@._V1_.jpg">  
+
+                </div>
+                <div class="card-back">
+                    <a>▷</a>
+                    <p id="romance">Romance/Drama</p>
+                    <p id="time">1h 46m</p>
+                </div>
+                
+            </div>
+            <div class="past-live">
+                <div class="card-front">
+                  <img id="past-live-movie" src="final-image/MV5BMTc4NjEyODE1OV5BMl5BanBnXkFtZTcwMjYzNTkxNA@@._V1_.jpg">  
+
+                </div>
+                <div class="card-back">
+                    <a>▷</a>
+                    <p id="romance">Romance/Drama</p>
+                    <p id="time">1h 46m</p>
+                </div>
+                
+            </div>
+            <div class="past-live">
+                <div class="card-front">
+                  <img id="past-live-movie" src="final-image/MV5BMTQ1ODIzOGQtOGFkZC00MWViLTgyYmUtNWJkNmIxZjYxMTdmXkEyXkFqcGc@._V1_.jpg">  
+
+                </div>
+                <div class="card-back">
+                    <a>▷</a>
+                    <p id="romance">Romance/Drama</p>
+                    <p id="time">1h 46m</p>
+                </div>
+                
+            </div>
+            <div class="past-live">
+                <div class="card-front">
+                  <img id="past-live-movie" src="final-image/MV5BMWMyNGNlZTktODVkNS00ZmMyLTk0NmUtNWVjOWU1MWMzZGMzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">  
+
+                </div>
+                <div class="card-back">
+                    <a>▷</a>
+                    <p id="romance">Romance/Drama</p>
+                    <p id="time">1h 46m</p>
+                </div>
+                
+            </div>
+            <div class="past-live">
+                <div class="card-front">
+                  <img id="past-live-movie" src="final-image/MV5BN2FkMTRkNTUtYTI0NC00ZjI4LWI5MzUtMDFmOGY0NmU2OGY1XkEyXkFqcGc@._V1_.jpg">  
+
+                </div>
+                <div class="card-back">
+                    <a>▷</a>
+                    <p id="romance">Romance/Drama</p>
+                    <p id="time">1h 46m</p>
+                </div>
+                
+            </div>
+            <div class="past-live">
+                <div class="card-front">
+                  <img id="past-live-movie" src="final-image/MV5BNmEyZjI0M2MtNGFkOC00YTRlLWI0MGQtYTgyODY2MGRhMjc4XkEyXkFqcGc@._V1_.jpg">  
+
+                </div>
+                <div class="card-back">
+                    <a>▷</a>
+                    <p id="romance">Romance/Drama</p>
+                    <p id="time">1h 46m</p>
+                </div>
+                
+            </div>
+            <div class="past-live">
+                <div class="card-front">
+                  <img id="past-live-movie" src="final-image/MV5BNTEyNmEwOWUtYzkyOC00ZTQ4LTllZmUtMjk0Y2YwOGUzYjRiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">  
+
+                </div>
+                <div class="card-back">
+                    <a>▷</a>
+                    <p id="romance">Romance/Drama</p>
+                    <p id="time">1h 46m</p>
+                </div>
+                
+            </div>
+            <div class="past-live">
+                <div class="card-front">
+                  <img id="past-live-movie" src="final-image/MV5BODVmZjhhYTYtYzRiOC00YzFiLThlZjMtZTQxNWY0MTI1MzlmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">  
+
+                </div>
+                <div class="card-back">
+                    <a>▷</a>
+                    <p id="romance">Romance/Drama</p>
+                    <p id="time">1h 46m</p>
+                </div>
+                
+            </div>
+            <div class="past-live">
+                <div class="card-front">
+                  <img id="past-live-movie" src="final-image/MV5BOTFiNzRiOWEtYTQwNy00NmRiLWE0ZWYtNTE0YjExZjFmZjkwXkEyXkFqcGc@._V1_.jpg">  
+
+                </div>
+                <div class="card-back">
+                    <a>▷</a>
+                    <p id="romance">Romance/Drama</p>
+                    <p id="time">1h 46m</p>
+                </div>
+                
+            </div>
+            <div class="past-live">
+                <div class="card-front">
+                  <img id="past-live-movie" src="final-image/MV5BMjEzYmZkNjktODBmYi00NzNkLWIzMjItMjhkMWZiZTZlN2MwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">  
+
+                </div>
+                <div class="card-back">
+                    <a>▷</a>
+                    <p id="romance">Romance/Drama</p>
+                    <p id="time">1h 46m</p>
+                </div>
+                
+            </div>
+            <div class="past-live">
+                <div class="card-front">
+                  <img id="past-live-movie" src="final-image/MV5BMjQ0MTgyNjAxMV5BMl5BanBnXkFtZTgwNjUzMDkyODE@._V1_FMjpg_UX1000_.jpg">  
+
+                </div>
+                <div class="card-back">
+                    <a>▷</a>
+                    <p id="romance">Romance/Drama</p>
+                    <p id="time">1h 46m</p>
+                </div>
+                
+            </div>
+            <div class="past-live">
+                <div class="card-front">
+                  <img id="past-live-movie" src="final-image/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_FMjpg_UX1000_.jpg">  
+
+                </div>
+                <div class="card-back">
+                    <a>▷</a>
+                    <p id="romance">Romance/Drama</p>
+                    <p id="time">1h 46m</p>
+                </div>
+                
+            </div>
+            <div class="past-live">
+                <div class="card-front">
+                  <img id="past-live-movie" src="final-image/MV5BMTk5ODk1NDkxMF5BMl5BanBnXkFtZTcwNTA5OTY0OQ@@._V1_FMjpg_UX1000_.jpg">  
+
+                </div>
+                <div class="card-back">
+                    <a>▷</a>
+                    <p id="romance">Romance/Drama</p>
+                    <p id="time">1h 46m</p>
+                </div>
+                
+            </div>
+            <div class="past-live">
+                <div class="card-front">
+                  <img id="past-live-movie" src="final-image/MV5BMWU3Y2NlZmEtMjJjNS00ZWMxLWE1MzctYWYyMjMzMDdkNTE4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">  
+
+                </div>
+                <div class="card-back">
+                    <a>▷</a>
+                    <p id="romance">Romance/Drama</p>
+                    <p id="time">1h 46m</p>
+                </div>
+                
+            </div>
+            <div class="past-live">
+                <div class="card-front">
+                  <img id="past-live-movie" src="final-image/MV5BNDA0MzM5YTctZTU2My00NGQ5LWE2NTEtNDM0MjZmMDBkOTZkXkEyXkFqcGc@._V1_.jpg">  
+
+                </div>
+                <div class="card-back">
+                    <a>▷</a>
+                    <p id="romance">Romance/Drama</p>
+                    <p id="time">1h 46m</p>
+                </div>
+                
+            </div>
+            <div class="past-live">
+                <div class="card-front">
+                  <img id="past-live-movie" src="final-image/MV5BNWY1NjFmNDItZDhmOC00NjI1LWE0ZDItMTM0MjBjZThiOTQ2XkEyXkFqcGc@._V1_.jpg">  
+
+                </div>
+                <div class="card-back">
+                    <a>▷</a>
+                    <p id="romance">Romance/Drama</p>
+                    <p id="time">1h 46m</p>
+                </div>
+                
+            </div>
+            <div class="past-live">
+                <div class="card-front">
+                  <img id="past-live-movie" src="final-image/MV5BOTJhOTMxMmItZmE0Ny00MDc3LWEzOGEtOGFkMzY4MWYyZDQ0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">  
+
+                </div>
+                <div class="card-back">
+                    <a>▷</a>
+                    <p id="romance">Romance/Drama</p>
+                    <p id="time">1h 46m</p>
+                </div>
+                
+            </div>
+            <div class="past-live">
+                <div class="card-front">
+                  <img id="past-live-movie" src="final-image/MV5BZTJkYjdmYjYtOGMyNC00ZGU1LThkY2ItYTc1OTVlMmE2YWY1XkEyXkFqcGc@._V1_.jpg">  
+
+                </div>
+                <div class="card-back">
+                    <a>▷</a>
+                    <p id="romance">Romance/Drama</p>
+                    <p id="time">1h 46m</p>
+                </div>
+                
+            </div>
+            <div class="past-live">
+                <div class="card-front">
+                  <img id="past-live-movie" src="final-image/unnamed.jpg">  
+
+                </div>
+                <div class="card-back">
+                    <a>▷</a>
+                    <p id="romance">Romance/Drama</p>
+                    <p id="time">1h 46m</p>
+                </div>
+                
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+   <footer>
+        <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Cinemas</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+           <h4>More</h4>
+            <ul>
+                <li><a href="#">Promotion</a></li>
+                <li><a href="#">News & Activity</a></li>
+                <li><a href="#">My ticket</a></li>
+                <li><a href="#">Term & Privacy</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Follow our social media</h4>
+            <div class="link">
+                <a href="#"><i class="fab fa-facebook" id="facebook"></i></a>
+                <a href="#"><i class="fab fa-telegram" id="telegram"></i></a>
+                <a href="#"><i class="fab fa-instagram"id="instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"id="tiktok"></i></a>
+                <a href="#"><i class="fab fa-youtube"id="youtube"></i></a>
+                
+            </div>
+        </div>
+        <div class="footer-column"> 
+            <h4 id="downloadapp">Download our app on</h4>
+            <div class="app">
+                <a href="#"><i class="fab fa-google-play" id="googleplay"></i></a>
+                <a href="#"><i class="fab fa-app-store-ios" id="appstoreios"></i></a>
+            </div>
+        </div>
+      <hr>
+      <p id="copyright">All right reserved &copy 2024</p>
+    </footer>
+
+
+
+    <script src="final-javascript/testone.js"></script>
+</body>
+</html>

@@ -1,0 +1,670 @@
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+
+    }
+    to{
+        opacity: 1;
+        transform: translatex(0);
+    }
+    
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:white;
+    color: black;
+}
+
+section{
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+
+
+/* Header styles */
+header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 800;
+   background-color: rgba(0, 0, 0, 0);
+   transition: background 0.3s color 0.3s;
+   width: 100%;
+   justify-content: space-around;
+   
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 600;
+    text-shadow:2px 2px 2px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Genres button */
+.genres {
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+}
+
+/* Full-screen menu overlay */
+.fullscreen-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%); /* Start hidden above the viewport */
+    transition: transform 0.5s ease-in-out; /* Smooth slide-in animation */
+    z-index: 1000;
+}
+
+/* When menu is active */
+.fullscreen-menu.active {
+    transform: translateY(0); /* Slide into view */
+}
+
+/* Close button */
+.close-menu {
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    font-size: 2rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Menu content */
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.menu-content a {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    transition: color 0.3s;
+}
+
+.menu-content a:hover {
+    color: yellow;
+
+}
+
+#t{
+    color: yellow;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 1.2em;
+    font-weight: 600;
+}
+#h{
+    color: yellow;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+.genres{
+    font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    position: relative;
+}
+
+.genres .menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0);
+    
+}
+header a:hover{
+    color: rgba(0, 0, 0, 1);
+   
+}
+header input{
+    flex-grow: 0.5;
+    border: solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#profile{
+    width: 40px;
+    border-radius: 50%;
+    background-color:white;
+}
+
+#john-wick-movie{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.action-movie-container{
+    position: relative;
+    z-index: 1;
+    
+}
+#john-wick-title{
+    width: 40%;
+    position: absolute;
+    z-index: 5;
+    top: 10%;
+    left: 5%;
+    background-color: rgba(0, 0, 0, 0);
+}
+.top-pick h1{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    text-decoration: underline rgb(148, 19, 233);
+}
+.top-pick{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    z-index: 20;
+    bottom: 10px;
+    left: 50%;
+    right: 50%;
+    background-color: rgba(0, 0, 0, 0);
+    
+}
+.top-pick-movie{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    align-items: center;    
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0,0.3);
+    
+}
+
+.top-pick-movie p{
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    
+
+}
+.top-pick-movie h{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+.top-pick-movie img{
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+}
+
+.top-pick-movie img:hover{
+    transform: scale(1.1);
+}
+
+.grey-man, .john-wick-four, .fast-furious, .mission-impossible{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+.watch-button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    z-index: 30;
+    top: 50%;
+    left: 12%;
+    background-color: rgba(0, 0, 0,0);
+    
+
+}
+.watch-button a{
+    padding: 15px 25px;
+    border-radius: 5px;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    
+    
+}
+.watch-button a:hover{
+    background-color: black;
+    color: white;
+}
+.action-film{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: relative;
+
+}
+
+.action-background img{
+    width: 1000px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    filter: blur(0.8px);
+
+}
+
+.action-background h1{
+    position: absolute;
+    z-index: 10;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0);
+    color:white;
+    font-weight: bolder;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+
+    font-size: 5em;
+    
+}
+
+
+
+.action-movie-grid img{
+    object-fit: cover;
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    
+
+}
+#past-live-movie{
+    background-color:rgba(0, 0, 0, 0) ;
+}
+
+.action-movie-grid{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+}
+.past-live{
+    position: relative;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+#past-live-movie{
+    transition: transform 0.3s ease;
+}
+.past-live:hover #past-live-movie{
+    transform: scale(1.1);
+    filter: blur(0.5px);
+    
+}
+
+.past-live:hover .card-back{
+    display: block;
+}
+.card-front{
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0);
+}
+.card-back{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    display: none;
+
+}
+
+.card-back p{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-weight: 600;
+    padding-left: 5px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    
+}
+#romance{
+    bottom: 50px;
+    position: absolute;
+    z-index: 30;
+
+
+}
+#time{
+    position: absolute;
+    z-index: 30;
+    bottom: 30px;
+}
+
+.card-back a{
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 80px;
+    color: white;
+    position: absolute;
+    left: 30%;
+    z-index: 30;
+    top: 25%;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+
+    
+}
+
+
+
+
+
+
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    padding: 60px 2%;
+    justify-content: space-evenly;
+    background-image: url("../final-image/wallhaven-nkrj7q.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+ul{
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.footer-column{
+    width: 25%;
+    background-color: rgba(0, 0, 0, 0);
+}
+.footer-column  h4{
+    position: relative;
+    margin-bottom: 30px;
+    font-weight:400;
+    font-size: 19.5px;;
+    color: #191a1b;
+    text-transform: capitalize;
+    padding-right: 20px;
+    white-space: nowrap;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+
+    
+    
+}
+.footer-column h4::before{ 
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background-color: #4aeded;
+    height: 2px;
+    
+    
+
+}
+ul li{
+    margin-bottom: 8px;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+ul li a{
+    display: block;
+    font-size: 13px;
+    text-transform: capitalize;
+    text-decoration: none;
+    transform: 0.4s;
+    background-color: rgba(0, 0, 0, 0);
+
+
+}
+ul li a:hover{
+    color:rgb(75, 70, 70);
+    padding-left: 2px;
+
+}
+
+.app {
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 10%;
+}
+
+.link{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.link a i, .app a i{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+.link a{
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    color:white;
+    margin: 0 8px 8px 0;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 50%;
+    transition: 0.4s;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.link a:hover{
+    color:#4d4f55;
+    background-color: rgb(62, 124, 200);
+}
+#downloadapp{
+    margin-left: 10%;
+}
+#copyright{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#facebook{
+   
+    font-size: 25px;
+    margin-top: 10px;
+}
+#instagram{
+    font-size: 25px;
+    margin-top: 10px;
+}
+#telegram{
+    font-size: 25px;
+    margin-top: 10px; 
+}
+#tiktok{
+    font-size: 25px;
+    margin-top: 10px; 
+}
+#youtube{
+    font-size: 25px;
+    margin-top: 10px; 
+}
+#googleplay{
+    font-size: 25px;
+    margin-top: 10px;  
+}
+#appstoreios{
+    font-size: 25px;
+    margin-top: 10px; 
+}
+
+@media(max-width:740px){
+    .footer-column{
+        width:50%;
+        margin-bottom: 30px;
+        text-align: center;
+        font: size 22px;
+
+    }
+    .footer-column h4{
+        font-size: 1em
+    }
+    .footer-column h4::before{
+        all: unset;
+    }
+}
+@media(max-width:555px){
+    .footer-column {
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+.app a{
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    color:white;
+    background-color: rgba(22, 22, 22, 0.8);
+    margin: 0 8px 8px 0;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 50%;
+    transition: 0.4s;
+    
+}
+.footer-column{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.app a:hover{
+    color:#4d4f55;
+    background-color: rgb(48, 106, 173);  
+}
+@media(max-width:740px){
+    .footer-column{
+        width:50%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .footer-column h4::before{
+        all: unset;
+    }
+}
+@media(max-width:555px){
+    .footer-column{
+        width: 100%;
+    }
+}
+hr{
+    width:90%;
+    border: 0;
+    border-bottom: 2px solid #6b4343;
+    margin: 20px auto;
+}
+#copyright{
+    text-align: center;
+    color: rgb(54, 51, 51);
+}
+
+
+
+
+@media screen and (max-width: 768px){
+    header a{
+    font-size: 0.8em;
+    }
+    .genres{
+        font-size: 0.8em;
+    }
+    .top-pick-movie img{
+        width: 100px;
+        height: 50px;
+    }
+    .watch-button a{
+        padding: 0.5em 1em;
+        font-size: 0.5em;
+    }
+    .top-pick-movie p, .top-pick-movie h{
+        font-size: 0.5em;
+    }
+
+    .action-background img{
+        width: 500px;
+        height: 200px;
+    }
+    .action-movie-grid{
+        grid-template-rows: repeat(3,1fr);
+    }
+    .action-movie-grid img{
+        width: 100px;
+        height: 150px;
+    }
+}
