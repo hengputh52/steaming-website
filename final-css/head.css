@@ -1,0 +1,378 @@
+@keyframes appear {
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+
+    }
+    to{
+        opacity: 1;
+        transform: translatex(0);
+    }
+    
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body {
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+}
+body {
+    background: rgb(58, 56, 56);
+    background-size: cover;
+}
+
+section{
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 800;
+   background-color: rgba(0, 0, 0, 0);
+   transition: background 0.3s color 0.3s;
+   width: 100%;
+   justify-content: space-around;
+   
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 600;
+    text-shadow:2px 2px 2px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    
+
+    
+}
+.genres {
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+}
+
+/* Full-screen menu overlay */
+.fullscreen-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%); /* Start hidden above the viewport */
+    transition: transform 0.5s ease-in-out; /* Smooth slide-in animation */
+    z-index: 1000;
+}
+
+/* When menu is active */
+.fullscreen-menu.active {
+    transform: translateY(0); /* Slide into view */
+}
+
+/* Close button */
+.close-menu {
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    font-size: 2rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Menu content */
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.menu-content a {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    transition: color 0.3s;
+}
+
+.menu-content a:hover {
+    color: yellow;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.genres{
+    font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    position: relative;
+}
+.genres .menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0);
+    
+}
+header a:hover{
+    color: rgba(0, 0, 0, 1);
+   
+}
+header input{
+    flex-grow: 0.5;
+    border: solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 5px;
+}
+#profile-info{
+    cursor: pointer;
+}
+#profile{
+    width: 40px;
+    border-radius: 50%;
+    background-color:white;
+}
+
+main h1{
+    margin: 0%;
+    padding: 0%;
+    margin-bottom: -2%;
+    font-size: 4rem;
+    color: white;
+    justify-self: center;
+}
+.head {
+    background-color: rgba(0, 0, 0, 0);
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.movie-container {
+    display: grid;
+    grid-template-columns: repeat(5, 0.5fr);
+    gap: 2%;
+    padding: 2%;
+    justify-items: center;
+    align-items: center;
+}
+
+.past-live img {
+    width: 130%;
+    aspect-ratio: 3 / 4;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+}
+
+.past-live {
+    width: 90%; 
+    max-width: 200px;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.past-live:hover img {
+    transform: scale(1.1);
+    filter: blur(0.8px);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.past-live:hover .card-back {
+    display: block;
+}
+
+.card-back {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    z-index: 10;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.card-back p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+
+#romance {
+    bottom: 5%;
+    position: absolute;
+    z-index: 30;
+}
+
+#time {
+    position: absolute;
+    z-index: 30;
+    bottom: 3%;
+}
+
+.card-back a { 
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 80px;
+    color: white;
+    position: absolute;
+    margin-left: 18%;
+    z-index: 30;
+    top: 25%;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}.movie-container img{
+    object-fit: cover;
+    width: 140%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+
+}
+.movie-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 8%;
+    padding: 0%;
+    margin: 0%;
+    row-gap: 40px;
+}
+.past-live{
+    position: relative;
+    cursor: pointer;
+}
+
+
+#past-live-movie{
+    transition: transform 0.3s ease;
+}
+.past-live:hover #past-live-movie{
+    transform: scale(1.1);
+    filter: blur(0.8px);
+}
+
+.past-live:hover .card-back{
+    display: block;
+}
+.card-front{
+    position: relative;
+    z-index: 1;
+}
+.card-back{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    display: none;
+
+}
+
+.card-back p{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-weight: 600;
+    padding-left: 5px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    
+}
+#romance{
+    bottom: 50px;
+    position: absolute;
+    z-index: 30;
+
+
+}
+#time{
+    position: absolute;
+    z-index: 30;
+    bottom: 30px;
+}
+
+.card-back a{
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 80px;
+    color: white;
+    position: absolute;
+    left: 30%;
+    z-index: 30;
+    top: 25%;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);   
+}
+
+.more-movie h1{
+    font-size: xx-large;
+    color: white;
+    justify-self: center;
+    margin-bottom: 1%;
+}
+.line{
+    justify-self: center;
+    margin: 2%;
+    margin-left: 5%;
+    width: 95%;
+    height: 2px;
+    background-color: aliceblue;
+    margin-bottom: 1%;
+    padding-bottom: 0%;
+}
+.more-show{
+    margin: 2%;
+    margin-left: 8%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    color: white;
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#month{
+    font-size: 3rem;
+    margin: 3%;
+    color: white;
+    justify-self: center;
+}
