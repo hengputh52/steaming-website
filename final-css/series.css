@@ -1,0 +1,405 @@
+html, body{
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+}
+body{
+    background-image: url("../final-image/gotbackground.jpg");
+    background-size: cover;
+}
+section{
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+
+
+/* Header styles */
+header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 800;
+   background-color: rgba(0, 0, 0, 0);
+   transition: background 0.3s color 0.3s;
+   width: 100%;
+   justify-content: space-around;
+   
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 600;
+    text-shadow:2px 2px 2px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Genres button */
+.genres {
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+}
+
+/* Full-screen menu overlay */
+.fullscreen-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%); /* Start hidden above the viewport */
+    transition: transform 0.5s ease-in-out; /* Smooth slide-in animation */
+    z-index: 1000;
+}
+
+/* When menu is active */
+.fullscreen-menu.active {
+    transform: translateY(0); /* Slide into view */
+}
+
+/* Close button */
+.close-menu {
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    font-size: 2rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Menu content */
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.menu-content a {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    transition: color 0.3s;
+}
+
+.menu-content a:hover {
+    color: yellow;
+
+}
+
+#t{
+    color: yellow;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 1.2em;
+    font-weight: 600;
+}
+#h{
+    color: yellow;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+section{
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.genres{
+    font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    position: relative;
+}
+
+.genres .menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0);
+    
+}
+header a:hover{
+    color: rgba(0, 0, 0, 1);
+   
+}
+header input{
+    flex-grow: 0.5;
+    border: solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#profile{
+    width: 40px;
+    border-radius: 50%;
+    background-color:white;
+}
+
+.logo {
+    margin-left: -20%;
+    padding: 0%;
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+#profile {
+    width: 40px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0%;
+    margin-bottom: -1%;
+    padding: 0%;
+    height: 68%;
+    width: 65%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.72) 48.03%, rgba(0, 0, 0, 0.17) 97.77%);    
+}
+
+#h {
+    color: gold;
+}
+
+#genre{
+    margin: -4%;
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 5%;
+}
+
+#drc{
+    margin-top: 7%;
+    margin-left: -30%;
+    width: 60%;
+    height: auto;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}   
+.rating{
+    margin-top: 3%;
+    margin-left: -35%;
+    width: 60%;
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-around;
+}
+
+.ratebox {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    width: 320px;
+    height: 110px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.45);
+    flex-shrink: 0;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.ratebox1 {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.45);
+    width: 320px;
+    height: 110px;
+    flex-shrink: 0;
+}
+.ratetext {
+    margin-top:  10%;
+    padding-top: 0%;
+    width: 133.886px;
+    height: 51.671px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Inter;
+    font-size: 40px !important;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.rateboxpic{
+    margin: 7%;
+    width: 110px;
+    height: 66.434px;
+    flex-shrink: 0;
+}
+.ratetext1{
+    margin-top:  13%;
+    padding-top: 0%;
+    width: 133.886px;
+    height: 51.671px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Inter;
+    font-size: 26px !important; /* Ensure it takes precedence */
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.ratetext1 a{
+    color: black;
+    text-decoration: none;
+}
+.rateboxpic1{
+    margin: 7%;
+    width: 70px;
+    height: 66.434px;
+    flex-shrink: 0;
+}
+.text1 {
+    margin-top: 3%;
+    margin-right: 53%;
+    display: flex;
+    flex-direction: row;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 2.5vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+}
+
+.box2{
+    height: auto;
+    width: 96%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.09) 0%, rgba(0, 0, 0, 0.77) 79%, rgba(0, 0, 0, 0.72) 100%);
+}
+.wrapper::-webkit-scrollbar{
+    width: 0;
+}
+.wrapper{
+    background-color: linear-gradient(180deg, rgba(0, 0, 0, 0.09) 0%, rgba(0, 0, 0, 0.77) 79%, rgba(0, 0, 0, 0.72) 100%);
+    padding: 2%;
+    margin: 0%;
+    display: flex;
+    width: 100%;
+    padding-bottom: 0.1%;
+    gap: 30px;
+    overflow-x: auto;
+    align-items: flex-start;
+}
+.wrapper .item{
+    min-width: 500px;
+    height: 270px;
+    flex-shrink: 0;
+    cursor: pointer;
+    background-color: rgb(13, 114, 202);
+}
+#item1, #item2, #item3, #item4, #item5 {
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    min-width: 500px;
+    height: 270px;
+}
+
+#item1 {
+    background-image: url("../final-image/arcaneserie.png");
+}
+#item2 {
+    background-image: url("../final-image/breakingbadserir.jpg");
+}
+#item3 {
+    background-image: url("../final-image/boyst.webp");
+}
+#item4 {
+    background-image: url("../final-image/MV5BZDFkM2M4MTItNDA1NS00YTE5LTgwNmQtOTkwM2ZlOGIxODZjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg");
+}
+#item5 {
+    background-image: url("../final-image/KonBrosarSrey24HDF.jpg");
+}
+#item6 {
+    background-color: rgba(255, 255, 255, 0.637);
+    min-width: 500px; /* Match the size of other items */
+    height: 270px; /* Match the height of other items */
+    border-radius: 15px; /* Adjusted for a smooth curve */
+    display: flex; /* Center the text */
+    align-items: center; /* Vertically center the text */
+    justify-content: center; 
+    text-decoration: none;
+}
+
+#vm {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4em;
+    text-decoration: none;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper .item:hover {
+    min-width: 520px; /* Increase width on hover */
+    height: 270px;
+    transition: all 0.5s ease-in-out; 
+    transform: scale(1.05);
+}
+
+.ratebox:hover, .ratebox1:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease, background-color 0.5s ease;
+    background-color: rgba(238, 237, 237, 0.894);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
